@@ -10,10 +10,6 @@ const MUSTACHE_MAIN_DIR = './main.mustache';
 */
 
 
-const response = await fetch('https://randomfox.ca/floof');
-const data = await response.json();
-
-
 
 
 let DATA = {
@@ -27,18 +23,59 @@ let DATA = {
     timeZoneName: 'short',
     timeZone: 'Europe/Stockholm',
   }),
-  myImg: data["image"],
 };
+async function getFoxPhoto(){
+  console.log("Here?")
+  await fetch('https://randomfox.ca/floof')
+  .then(r => r.json())
+  .then(r => {
+    DATA.myImg = r.image
+  });
+  //DATA.myImg = await response.json()["image"];
+  
+}
+
+/*
+async function setWeatherInformation() {
+  await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=stockholm&appid=${process.env.OPEN_WEATHER_MAP_KEY}&units=metric`
+  )
+    .then(r => r.json())
+    .then(r => {
+      DATA.city_temperature = Math.round(r.main.temp);
+      DATA.city_weather = r.weather[0].description;
+      DATA.city_weather_icon = r.weather[0].icon;
+      DATA.sun_rise = new Date(r.sys.sunrise * 1000).toLocaleString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Europe/Stockholm',
+      });
+      DATA.sun_set = new Date(r.sys.sunset * 1000).toLocaleString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Europe/Stockholm',
+      });
+    });
+}
+*/
+
 /**
   * A - We open 'main.mustache'
   * B - We ask Mustache to render our file with the data
   * C - We create a README.md file with the generated output
   */
-function generateReadMe() {
-  fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
+async function generateReadMe() {
+  await fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
     if (err) throw err;
     const output = Mustache.render(data.toString(), DATA);
     fs.writeFileSync('README.md', output);
   });
 }
-generateReadMe();
+
+async function action(){
+  await getFoxPhoto();
+  console.log(DATA.myImg);
+  await generateReadMe();
+}
+
+action();
