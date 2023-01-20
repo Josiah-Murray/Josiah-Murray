@@ -24,15 +24,35 @@ let DATA = {
     timeZone: 'Europe/Stockholm',
   }),
 };
+
 async function getFoxPhoto(){
-  console.log("Here?")
-  await fetch("https://randomfox.ca/floof")
-  //.then(r => r.json())
-  .then(r => {
-    DATA.myImg = r.image
-  });
-  //DATA.myImg = await response.json()["image"];
-  
+  // console.log("Here?")
+  // await fetch("https://randomfox.ca/floof", {
+  //   method: 'POST',
+  //   params: {cat: 'movies', count: '10'},
+  //   headers: {
+  //     'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+  //     'X-RapidAPI-Host': 'andruxnet-random-famous-quotes.p.rapidapi.com'
+  //   }})
+  // //.then(r => r.json())
+  // .then(r => {
+  //   DATA.myImg = r.image
+  // });
+  // //DATA.myImg = await response.json()["image"];
+
+  const url = 'https://randomfox.ca/floof/';
+
+  const options = {
+    method: 'POST',
+  };
+
+  await fetch(url, options)
+    .then(res => res.json())
+    .then(json => DATA.myImg = json["image"])
+    .then(json => console.log(json))
+    .catch(err => console.error('error:' + err));
+    console.log(DATA.myImg)
+    
 }
 
 /*
