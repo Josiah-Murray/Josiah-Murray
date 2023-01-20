@@ -29,6 +29,7 @@ let DATA = {
   }),
   myImg: data["image"],
 };
+<<<<<<< Updated upstream
 /**
   * A - We open 'main.mustache'
   * B - We ask Mustache to render our file with the data
@@ -36,6 +37,29 @@ let DATA = {
   */
 function generateReadMe() {
   fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
+=======
+
+async function getFoxPhoto(){
+
+  const url = 'https://randomfox.ca/floof/';
+
+  const options = {
+    method: 'POST',
+  };
+
+  await fetch(url, options)
+    .then(res => res.json())
+    .then(json => DATA.myImg = json["image"])
+    
+    .catch(err => console.error('error:' + err));
+    
+    
+}
+
+
+async function generateReadMe() {
+  await fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
+>>>>>>> Stashed changes
     if (err) throw err;
     const output = Mustache.render(data.toString(), DATA);
     fs.writeFileSync('README.md', output);
