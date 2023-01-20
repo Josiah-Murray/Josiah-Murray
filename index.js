@@ -26,8 +26,8 @@ let DATA = {
 };
 async function getFoxPhoto(){
   console.log("Here?")
-  await fetch('https://randomfox.ca/floof')
-  .then(r => r.json())
+  await fetch("https://randomfox.ca/floof")
+  //.then(r => r.json())
   .then(r => {
     DATA.myImg = r.image
   });
