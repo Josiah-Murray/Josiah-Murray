@@ -10,10 +10,6 @@ const MUSTACHE_MAIN_DIR = './main.mustache';
 */
 
 
-const response = await fetch('https://randomfox.ca/floof');
-const data = await response.json();
-
-
 
 
 let DATA = {
@@ -27,17 +23,7 @@ let DATA = {
     timeZoneName: 'short',
     timeZone: 'Europe/Stockholm',
   }),
-  myImg: data["image"],
 };
-<<<<<<< Updated upstream
-/**
-  * A - We open 'main.mustache'
-  * B - We ask Mustache to render our file with the data
-  * C - We create a README.md file with the generated output
-  */
-function generateReadMe() {
-  fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
-=======
 
 async function getFoxPhoto(){
 
@@ -50,7 +36,6 @@ async function getFoxPhoto(){
   await fetch(url, options)
     .then(res => res.json())
     .then(json => DATA.myImg = json["image"])
-    
     .catch(err => console.error('error:' + err));
     
     
@@ -59,10 +44,15 @@ async function getFoxPhoto(){
 
 async function generateReadMe() {
   await fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
->>>>>>> Stashed changes
     if (err) throw err;
     const output = Mustache.render(data.toString(), DATA);
     fs.writeFileSync('README.md', output);
   });
 }
-generateReadMe();
+
+async function action(){
+  await getFoxPhoto();
+  await generateReadMe();
+}
+
+action();
