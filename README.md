@@ -6,7 +6,7 @@ I'm a 4th year applied mathematics student studying partial differential equatio
 
 This should be a picture of a random fox pulled from an API: (Note: I currently have to make the API call manually, it wont update very often.)
 <p align="center">
-    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;73.jpg"/>
+    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;61.jpg"/>
 </p>
 
 ## To do:
