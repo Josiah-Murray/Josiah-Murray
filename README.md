@@ -6,7 +6,7 @@ I'm a 4th year applied mathematics student studying partial differential equatio
 
 This should be a picture of a random fox pulled from an API: (Note: I currently have to make the API call manually, it wont update very often.)
 <p align="center">
-    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;25.jpg"/>
+    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;114.jpg"/>
 </p>
 
 ## To do:
@@ -16,3 +16,4 @@ This should be a picture of a random fox pulled from an API: (Note: I currently 
  - [ ] Figure out how to use GitHub actions
  - [ ] Automate my profile updating script
  - [ ] Actually do something interesting with my newfound skills
+ - [ ] Finish making this profile page
