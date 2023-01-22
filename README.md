@@ -4,16 +4,16 @@
 ## Me - Josiah
 I'm a 4th year applied mathematics student studying partial differential equations. On occasion, I have some coding to do for uni, but I also tinker with personal projects in my free time. I've been looking to take my coding up a notch and thought GitHub would be a good place to start!
 
-This should be a picture of a random fox pulled from an API: 
+This should be a picture of a random fox pulled from an API: (Note: I currently have to make the API call manually, it wont update very often.)
 <p align="center">
-    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;53.jpg"/>
+    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;55.jpg"/>
 </p>
 
 ## To do:
  - [x] Figure out how to make GitHub profile
  - [x] Figure out how to edit GitHub profile using code
  - [x] Spend far too long not doing assignments and instead trying to make an API call in node.js
- - [x] Figure out how to use GitHub actions
- - [x] Automate my profile updating script
+ - [ ] Figure out how to use GitHub actions
+ - [ ] Automate my profile updating script
  - [ ] Actually do something interesting with my newfound skills
  - [ ] Finish making this profile page
