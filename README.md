@@ -6,7 +6,7 @@ I'm a 4th year applied mathematics student studying partial differential equatio
 
 This should be a picture of a random fox pulled from an API, updated daily: 
 <p align="center">
-    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;114.jpg"/>
+    <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;72.jpg"/>
 </p>
 
 ## To do:
@@ -15,6 +15,5 @@ This should be a picture of a random fox pulled from an API, updated daily:
  - [x] Spend far too long not doing assignments and instead trying to make an API call in node.js
  - [x] Figure out how to use GitHub actions
  - [x] Automate my profile updating script
- - [ ] Fix update not working
  - [ ] Actually do something interesting with my newfound skills
  - [ ] Finish making this profile page
