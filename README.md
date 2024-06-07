@@ -2,7 +2,7 @@
 <p align='center'> Just note, this is a work  in progress. </p>
 
 ## Me - Josiah
-I'm a PhD student studying partial differential equations and mathematical modelling. On occasion, I have some coding to do for uni, but I also tinker with personal projects in my free time. I've been looking to take my coding up a notch and thought GitHub would be a good place to start!
+I'm a PhD student studying partial differential equations and mathematical modelling. Most of the coding I do is connected to my research and not synced here, but I also tinker with personal projects in my free time. I've been looking to take my coding up a notch and thought GitHub would be a good place to start!
 
 This should be a picture of a random fox pulled from an API, updated daily: 
 <p align="center">
