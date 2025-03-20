@@ -4,7 +4,7 @@
 ## Me - Josiah
 I'm an applied mathematics honours student studying partial differential equations and mathematical modelling. On occasion, I have some coding to do for uni, but I also tinker with personal projects in my free time. I've been looking to take my coding up a notch and thought GitHub would be a good place to start!
 
-This should be a picture of a random fox pulled from an API, updated daily: 
+This should be a picture of a random fox pulled from an API, updated daily (except it's not, an update broke my code): 
 <p align="center">
     <img src="https:&#x2F;&#x2F;randomfox.ca&#x2F;images&#x2F;25.jpg"/>
 </p>
