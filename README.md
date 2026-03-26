@@ -4,7 +4,4 @@
 
 
 ## Me - Josiah
-I'm an applied mathematics PhD student studying railway infrastructure dynamics. Much of my research involves some level of scientific computing, but I also occasionally tinker with personal projects in my free time.
-
-
-### My README.md is a work in progress, check in ~~soon~~ at some point in the future!
+I'm an applied mathematics PhD student studying the numerical inversion of the Laplace transform and how it can be used in the solution of beam problems. In particular, I work in the contexts of railways and ice shelves. Not all of my research is currently publically available, but feel free to reach out!
